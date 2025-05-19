@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Roupas Agrinho - Moda Sustentável</title>
+    <title>Agrinho Fashion - Vista o Campo com Estilo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <a href="#">Loja Agrinho</a>
-            </div>
+            <h1><a href="#">Agrinho Fashion</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#">Página Inicial</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#colecoes">Coleções</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#colecao">Coleção</a></li>
                     <li><a href="#sobre">Sobre Nós</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="#carrinho"><i class="fas fa-shopping-cart"></i> Carrinho (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="#carrinho" class="carrinho">Carrinho (0)</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,217 +25,119 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Moda que Floresce: Sustentabilidade e Estilo Agrinho</h1>
-                <p>Descubra peças únicas, inspiradas na natureza e produzidas com responsabilidade ambiental.</p>
-                <a href="#produtos" class="button">Ver Coleção</a>
+                <h2>Moda Inspirada na Natureza, Feita com Carinho.</h2>
+                <p>Descubra peças únicas que celebram a beleza do campo e o trabalho da agricultura familiar.</p>
+                <a href="#colecao" class="button">Ver Coleção</a>
             </div>
             <div class="hero-image">
-                <img src="images/banner_principal.jpg" alt="Banner Principal com Roupas Sustentáveis">
+                <img src="imagens/capa.jpg" alt="Modelo vestindo roupa da Agrinho Fashion">
             </div>
         </div>
     </section>
 
-    <section id="produtos" class="section">
+    <section id="colecao" class="secao-destaque">
         <div class="container">
-            <h2>Nossos Produtos</h2>
-            <div class="product-grid">
-                <div class="product-item" data-id="1" data-name="Camiseta de Algodão Orgânico - Folhas Bordadas" data-price="35.00" data-image="images/camiseta_algodao_organico.jpg">
-                    <img src="images/camiseta_algodao_organico.jpg" alt="Camiseta de Algodão Orgânico">
-                    <h3>Camiseta de Algodão Orgânico - Folhas Bordadas</h3>
-                    <p class="price">R$ 35,00</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+            <h2>Nossa Coleção</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="imagens/produto1.jpg" alt="Camiseta Algodão Orgânico">
+                    <h3>Camiseta Algodão Orgânico - Colheita Feliz</h3>
+                    <p class="preco">R$ 45,00</p>
+                    <button class="adicionar-carrinho" data-id="1" data-nome="Camiseta Algodão Orgânico - Colheita Feliz" data-preco="45.00" data-imagem="imagens/produto1.jpg">Adicionar ao Carrinho</button>
                 </div>
-                <div class="product-item" data-id="2" data-name="Calça Sarja Reciclada - Tingimento Natural" data-price="75.00" data-image="images/calca_sarja_reciclada.jpg">
-                    <img src="images/calca_sarja_reciclada.jpg" alt="Calça Sarja Reciclada">
-                    <h3>Calça Sarja Reciclada - Tingimento Natural</h3>
-                    <p class="price">R$ 75,00</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                <div class="produto">
+                    <img src="imagens/produto2.jpg" alt="Calça Sarja Sustentável">
+                    <h3>Calça Sarja Sustentável - Terra Fértil</h3>
+                    <p class="preco">R$ 89,90</p>
+                    <button class="adicionar-carrinho" data-id="2" data-nome="Calça Sarja Sustentável - Terra Fértil" data-preco="89.90" data-imagem="imagens/produto2.jpg">Adicionar ao Carrinho</button>
                 </div>
-                <div class="product-item" data-id="3" data-name="Vestido de Linho Sustentável - Estampa Botânica" data-price="90.00" data-image="images/vestido_linho_sustentavel.jpg">
-                    <img src="images/vestido_linho_sustentavel.jpg" alt="Vestido de Linho Sustentável">
-                    <h3>Vestido de Linho Sustentável - Estampa Botânica</h3>
-                    <p class="price">R$ 90,00</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                <div class="produto">
+                    <img src="imagens/produto3.jpg" alt="Vestido Linho Natural">
+                    <h3>Vestido Linho Natural - Flores do Campo</h3>
+                    <p class="preco">R$ 120,00</p>
+                    <button class="adicionar-carrinho" data-id="3" data-nome="Vestido Linho Natural - Flores do Campo" data-preco="120.00" data-imagem="imagens/produto3.jpg">Adicionar ao Carrinho</button>
                 </div>
-                <div class="product-item" data-id="4" data-name="Ecobag de Algodão Cru - Logo Agrinho" data-price="20.00" data-image="images/ecobag_algodao_cru.jpg">
-                    <img src="images/ecobag_algodao_cru.jpg" alt="Ecobag de Algodão Cru">
-                    <h3>Ecobag de Algodão Cru - Logo Agrinho</h3>
-                    <p class="price">R$ 20,00</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                <div class="produto">
+                    <img src="imagens/produto4.jpg" alt="Chapéu Palha Artesanal">
+                    <h3>Chapéu Palha Artesanal - Sol Radiante</h3>
+                    <p class="preco">R$ 35,00</p>
+                    <button class="adicionar-carrinho" data-id="4" data-nome="Chapéu Palha Artesanal - Sol Radiante" data-preco="35.00" data-imagem="imagens/produto4.jpg">Adicionar ao Carrinho</button>
                 </div>
-                <div class="product-item" data-id="5" data-name="Casaco de Lã Reciclada - Textura Natural" data-price="120.00" data-image="images/casaco_la_reciclada.jpg">
-                    <img src="images/casaco_la_reciclada.jpg" alt="Casaco de Lã Reciclada">
-                    <h3>Casaco de Lã Reciclada - Textura Natural</h3>
-                    <p class="price">R$ 120,00</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                <div class="produto">
+                    <img src="imagens/produto5.jpg" alt="Blusa Tricot Feito à Mão">
+                    <h3>Blusa Tricot Feito à Mão - Brisa da Manhã</h3>
+                    <p class="preco">R$ 95,50</p>
+                    <button class="adicionar-carrinho" data-id="5" data-nome="Blusa Tricot Feito à Mão - Brisa da Manhã" data-preco="95.50" data-imagem="imagens/produto5.jpg">Adicionar ao Carrinho</button>
                 </div>
-                <div class="product-item" data-id="6" data-name="Acessório de Madeira Sustentável - Detalhe Artesanal" data-price="45.00" data-image="images/acessorio_madeira.jpg">
-                    <img src="images/acessorio_madeira.jpg" alt="Acessório de Madeira Sustentável">
-                    <h3>Acessório de Madeira Sustentável - Detalhe Artesanal</h3>
-                    <p class="price">R$ 45,00</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                <div class="produto">
+                    <img src="imagens/produto6.jpg" alt="Saia Jeans Reciclado">
+                    <h3>Saia Jeans Reciclado - Replantando Ideias</h3>
+                    <p class="preco">R$ 75,00</p>
+                    <button class="adicionar-carrinho" data-id="6" data-nome="Saia Jeans Reciclado - Replantando Ideias" data-preco="75.00" data-imagem="imagens/produto6.jpg">Adicionar ao Carrinho</button>
                 </div>
-            </div>
-            <div class="view-more">
-                <a href="#">Ver Mais Produtos</a>
             </div>
         </div>
     </section>
 
-    <section id="colecoes" class="section bg-light">
+    <section id="sobre" class="secao-destaque">
         <div class="container">
-            <h2>Nossas Coleções</h2>
-            <div class="collection-grid">
-                <div class="collection-item">
-                    <img src="images/colecao_primavera.jpg" alt="Coleção Primavera">
-                    <h3>Coleção Primavera Florescer</h3>
-                    <p>Cores vibrantes e tecidos leves para a nova estação.</p>
-                    <a href="#" class="button secondary">Ver Coleção</a>
+            <h2>Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-imagem">
+                    <img src="imagens/sobre.jpg" alt="Pessoas trabalhando na agricultura">
                 </div>
-                <div class="collection-item">
-                    <img src="images/colecao_verao.jpg" alt="Coleção Verão">
-                    <h3>Coleção Verão Solar</h3>
-                    <p>Peças frescas e estampas inspiradas no sol e no mar.</p>
-                    <a href="#" class="button secondary">Ver Coleção</a>
-                </div>
-                <div class="collection-item">
-                    <img src="images/colecao_outono.jpg" alt="Coleção Outono">
-                    <h3>Coleção Outono Aconchego</h3>
-                    <p>Tons terrosos e materiais confortáveis para os dias mais frescos.</p>
-                    <a href="#" class="button secondary">Ver Coleção</a>
+                <div class="sobre-texto">
+                    <p>A Agrinho Fashion nasceu da paixão pela natureza e do desejo de valorizar o trabalho dos agricultores familiares. Nossas roupas são inspiradas na beleza do campo, utilizando materiais sustentáveis e processos de produção conscientes.</p>
+                    <p>Acreditamos em uma moda que respeita o meio ambiente e as pessoas. Cada peça da nossa coleção conta uma história de cuidado com a terra e de dedicação ao cultivo.</p>
+                    <p>Ao escolher Agrinho Fashion, você veste mais do que uma roupa, você veste um propósito.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre" class="section">
-        <div class="container">
-            <div class="about-content">
-                <h2>Sobre a Loja Agrinho</h2>
-                <p>Somos um projeto dedicado a promover a moda sustentável, inspirada na riqueza da natureza e nos valores do Agrinho. Nossas peças são cuidadosamente criadas com materiais ecológicos, como algodão orgânico, tecidos reciclados e tingimentos naturais, minimizando o impacto ambiental e valorizando o trabalho justo.</p>
-                <p>Acreditamos que a moda pode ser uma força para o bem, conectando as pessoas com a natureza e incentivando escolhas conscientes. Cada peça da Loja Agrinho conta uma história de cuidado com o planeta e de valorização da produção responsável.</p>
-                <a href="#" class="button">Saiba Mais</a>
-            </div>
-            <div class="about-image">
-                <img src="images/sobre_nos.jpg" alt="Imagem Sobre Nós - Processo Sustentável">
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="section bg-light">
+    <section id="contato">
         <div class="container">
             <h2>Entre em Contato</h2>
-            <div class="contact-form">
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="button primary">Enviar Mensagem</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section id="carrinho" class="section">
-        <div class="container">
-            <h2>Seu Carrinho de Compras</h2>
-            <div id="cart-items">
-                <p>Seu carrinho está vazio.</p>
-                </div>
-            <div id="cart-total" class="cart-total">
-                <strong>Total: R$ <span id="total-price">0.00</span></strong>
-            </div>
-            <div class="cart-actions">
-                <a href="#" class="button secondary">Continuar Comprando</a>
-                <a href="#finalizar-compra" class="button primary">Finalizar Compra</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="finalizar-compra" class="section bg-light">
-        <div class="container">
-            <h2>Finalizar Compra</h2>
-            <form id="checkout-form">
+            <p>Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
+            <form id="form-contato">
                 <div class="form-group">
-                    <label for="nome-completo">Nome Completo:</label>
-                    <input type="text" id="nome-completo" name="nome-completo" required>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
                 </div>
                 <div class="form-group">
-                    <label for="email-checkout">Email:</label>
-                    <input type="email" id="email-checkout" name="email-checkout" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" id="endereco" name="endereco" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" name="cidade" required>
-                </div>
-                <div class="form-group">
-                    <label for="estado">Estado:</label>
-                    <input type="text" id="estado" name="estado" required>
-                </div>
-                <div class="form-group">
-                    <label for="cep">CEP:</label>
-                    <input type="text" id="cep" name="cep" required>
-                </div>
-                <div class="form-group">
-                    <label>Forma de Pagamento:</label>
-                    <div class="payment-options">
-                        <input type="radio" id="cartao" name="pagamento" value="cartao">
-                        <label for="cartao">Cartão de Crédito</label><br>
-                        <input type="radio" id="boleto" name="pagamento" value="boleto">
-                        <label for="boleto">Boleto Bancário</label><br>
-                        </div>
-                </div>
-                <button type="submit" class="button primary">Confirmar Pedido</button>
+                <button type="submit" class="button">Enviar Mensagem</button>
             </form>
+        </div>
+    </section>
+
+    <section id="carrinho-modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar-modal">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="itens-carrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <div id="total-carrinho" class="total">
+                <strong>Total: R$ 0,00</strong>
+            </div>
+            <button id="finalizar-compra" class="button" disabled>Finalizar Compra</button>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <h3>Institucional</h3>
-                    <ul>
-                        <li><a href="#sobre">Sobre Nós</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Atendimento ao Cliente</h3>
-                    <ul>
-                        <li><a href="#contato">Fale Conosco</a></li>
-                        <li><a href="#">Dúvidas Frequentes</a></li>
-                        <li><a href="#">Trocas e Devoluções</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Siga-nos</h3>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Loja de Roupas Agrinho - Moda Sustentável com a Essência da Natureza.</p>
-            </div>
+            <p>&copy; 2023 Agrinho Fashion - Todos os direitos reservados.</p>
+            <p>Projeto Educacional Agrinho</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
